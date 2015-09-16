@@ -1,0 +1,117 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" android:background="#ffffff">
+
+     <ImageView
+	        android:id="@+id/Logo"
+	        android:layout_width="match_parent"
+	    	android:layout_height="wrap_content" 
+	    	android:layout_marginLeft="20dip"
+            android:layout_marginRight="20dip"
+	    	android:src="@drawable/logo"
+	        />
+    
+     <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Full Name:"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:layout_marginTop="20dip"
+         android:textSize="15sp"
+      	 android:fontFamily="sans-serif-condensed"
+         android:textColor="#000000"/>
+     
+     <EditText android:id="@+id/txtName" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dip"
+         android:layout_marginBottom="20dip"
+         android:textColor="#000000"/>
+     
+     <TextView android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:text="Email:"
+         android:layout_marginLeft="10dip"
+         android:layout_marginRight="10dip"
+         android:textSize="15sp"
+      	 android:fontFamily="sans-serif-condensed"
+         android:textColor="#000000"/>
+     
+     <EditText android:id="@+id/txtEmail" 
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+         android:layout_margin="10dip"
+         android:layout_marginBottom="20dip"
+         android:textColor="#000000"/>
+     
+     <Button android:id="@+id/btnRegister" 
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:layout_gravity="center"
+         android:text=""
+         android:layout_marginBottom="20dip"
+         android:background="@drawable/register"
+         android:layout_margin="10dip"/>
+     
+     <LinearLayout
+        android:id="@+id/llProfile"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:visibility="gone">
+
+        <ImageView
+            android:id="@+id/imgProfilePic"
+            android:layout_width="80dp"
+            android:layout_height="wrap_content" 
+            android:layout_weight="1"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:orientation="vertical"
+            android:layout_weight="2" >
+
+            <TextView
+                android:id="@+id/txtsName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="20dp" />
+
+            <TextView
+                android:id="@+id/txtsEmail"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="5dp"
+                android:textSize="18dp" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/btn_sign_in"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:layout_marginBottom="20dp"/>
+
+    <Button
+        android:id="@+id/btn_sign_out"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_logout_from_google"
+        android:visibility="gone" 
+        android:layout_marginBottom="10dp"/>
+
+    <Button
+        android:id="@+id/btn_revoke_access"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/btn_revoke_access"
+        android:visibility="gone" />
+
+</LinearLayout>

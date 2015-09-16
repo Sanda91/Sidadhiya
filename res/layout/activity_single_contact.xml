@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+	android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+<LinearLayout
+  android:orientation="vertical"
+  android:layout_width="match_parent"
+  android:layout_height="wrap_content"
+  android:padding="10dp"
+  android:background="#ffffff">
+  
+  <ImageView
+        android:id="@+id/deal_image"
+        android:layout_width="400dip"
+        android:layout_height="wrap_content"
+    	android:layout_margin="10dip"
+        android:layout_gravity="center"/>
+  
+
+  <TextView android:id="@+id/name_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            android:paddingTop="10dip"
+            android:paddingBottom="10dip"
+            android:fontFamily="sans-serif"  
+            android:textColor="#2EA5FD"/>
+  
+  <!-- Email Label -->
+  <TextView android:id="@+id/email_label"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:textSize="25sp"
+            android:layout_marginTop="5dip"
+            android:fontFamily="sans-serif"  
+            android:textColor="#E30022"/>
+  
+  <!-- Mobile Label -->
+  <TextView android:id="@+id/mobile_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:textSize="20sp"
+      		android:textStyle="bold"
+      		android:layout_marginTop="5dip"
+      		android:textColor="#4C4C4C"/>
+  
+  <!-- Address Label -->
+  <TextView android:id="@+id/address_label"
+      		android:layout_width="fill_parent"
+      		android:layout_height="wrap_content"
+      		android:layout_marginTop="5dip"
+      		android:layout_marginBottom="7dip"
+      		android:textSize="20sp"
+      		android:fontFamily="sans-serif-condensed"
+      		android:textColor="#4C4C4C"/>
+  
+   <fragment
+        android:id="@+id/shop_location"
+        android:name="com.google.android.gms.maps.MapFragment"
+        android:layout_width="fill_parent"
+        android:layout_height="300dip"/>
+  
+  
+</LinearLayout>
+</ScrollView>
